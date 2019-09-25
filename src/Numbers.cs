@@ -26,7 +26,7 @@ namespace Nixill.Utils {
       return neg * ret;
     }
 
-    private static int IntFromChar(char chr) {
+    public static int IntFromChar(char chr) {
       int i = (int)chr;
       if (i < 48) {
         throw new ArgumentException("intFromString only accepts alphanumeric characters.");
@@ -101,7 +101,7 @@ namespace Nixill.Utils {
       return neg + ret;
     }
 
-    private static char IntToChar(int i) {
+    public static char IntToChar(int i) {
       if (i < 0 || i > 35) {
         throw new ArgumentOutOfRangeException("Only digits 0 to 35 can be converted to chars.");
       }
