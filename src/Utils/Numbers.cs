@@ -28,27 +28,34 @@ namespace Nixill.Utils {
 
     public static int IntFromChar(char chr) {
       int i = (int)chr;
+      // Characters preceding '0'
       if (i < 48) {
         throw new ArgumentException("intFromString only accepts alphanumeric characters.");
       }
       i -= 48;
+      // Characters '0' through '9'
       if (i < 10) {
         return i;
       }
+      // Characters preceding 'A'
       else if (i < 17) {
         throw new ArgumentException("intFromString only accepts alphanumeric characters.");
       }
       i -= 7;
+      // Characters 'A' through 'Z'
       if (i < 36) {
         return i;
       }
+      // Characters preceding 'a'
       else if (i < 42) {
         throw new ArgumentException("intFromString only accepts alphanumeric characters.");
       }
       i -= 32;
+      // Characters 'a' through 'z'
       if (i < 36) {
         return i;
       }
+      // Characters after 'z'
       throw new ArgumentException("intFromString only accepts alphanumeric characters.");
     }
 
