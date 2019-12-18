@@ -7,8 +7,8 @@
     <Version>0.1.0</Version>
     <Authors>Nixill</Authors>
     <PackageDescription>Some niche but neat things Nix oft needs.</PackageDescription>
-    <RepositoryUrl>https://github.com/OWNER/REPOSITORY</RepositoryUrl>
-    <RootNamespace>C__Nixlib</RootNamespace>
+    <RepositoryUrl>https://github.com/ShadowFoxNixill/C--NixLib</RepositoryUrl>
+    <RootNamespace>Nixill</RootNamespace>
   </PropertyGroup>
 
 </Project>
