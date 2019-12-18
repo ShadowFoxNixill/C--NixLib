@@ -7,7 +7,5 @@ namespace Nixill.Random {
     public WeightedRandom() {
       Backing = new SortedDictionary<int, T>();
     }
-
-
   }
 }
